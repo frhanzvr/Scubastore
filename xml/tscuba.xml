@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="tscuba.xsl"?>
+    <product>
+        <details>
+            <producttype>Sandal</producttype>
+            <productname>Scuba Slides</productname>
+            <price>RM80.00</price>
+            <colour>Black</colour>
+        </details>
+    
+        <details>
+            <producttype>Cap</producttype>
+            <productname>Corduroy Cap</productname>
+            <price>RM50.00</price>
+            <colour>Grey</colour>
+        </details>
+	
+        <details>
+            <producttype>Shirt</producttype>
+            <productname>Scuba Jersey V1</productname>
+            <price>RM139.00</price>
+            <colour>Black</colour>
+        </details>
+
+        <details>
+            <producttype>Shirt</producttype>
+            <productname>Scuba Jersey V2</productname>
+            <price>RM149.00</price>
+            <colour>Blue</colour>
+        </details>      
+
+        <details>
+            <producttype>Shirt</producttype>
+            <productname>Scuba Jersey V3</productname>
+            <price>RM159.00</price>
+            <colour>Green</colour>
+        </details>      
+
+        <details>
+            <producttype>Shirt</producttype>
+            <productname>Scuba Workshirt</productname>
+            <price>RM180.00</price>
+            <colour>Grey</colour>
+        </details>      
+   
+        <details>
+            <producttype>Bag</producttype>
+            <productname>Scuba Sling Bag</productname>
+            <price>RM59.00</price>
+            <colour>Black</colour>
+        </details>
+    </product>

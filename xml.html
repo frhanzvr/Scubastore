@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scubastore</title>
+    <link rel="stylesheet" type="text/xsl" href="xml/tscuba.xsl">
+</head>
+<body>
+    <h1 a href="index.html">Scubastore</h1>
+  
+
+    <script type="text/javascript">
+        if (window.ActiveXObject) {
+            // For Internet Explorer
+            var xmlDoc = new ActiveXObject("Msxml2.DOMDocument");
+            xmlDoc.load("xml/tscuba.xml");
+            document.write(xmlDoc.transformNode(document.styleSheets[0]));
+        } else if (document.implementation && document.implementation.createDocument) {
+            // For modern browsers
+            var xsltProcessor = new XSLTProcessor();
+            var xmlRequest = new XMLHttpRequest();
+            xmlRequest.open("GET", "xml/tscuba.xml", false);
+            xmlRequest.send(null);
+            var xmlDoc = xmlRequest.responseXML;
+            var xslRequest = new XMLHttpRequest();
+            xslRequest.open("GET", "xml/tscuba.xsl", false);
+            xslRequest.send(null);
+            var xslStylesheet = xslRequest.responseXML;
+            xsltProcessor.importStylesheet(xslStylesheet);
+            var resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+            document.body.appendChild(resultDocument);
+        }
+    </script>
+</body>
+</html>
